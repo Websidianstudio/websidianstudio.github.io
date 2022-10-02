@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0a0a0b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dfdae8' fill-opacity='0.19'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+    padding-bottom: 10vh;
+    overflow: hidden;
+}
+.topbar {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.25vh;
+}
+.topbar-brand {
+    font-size: 2.25vw;
+    color: white;
+    font-weight: 600;
+}
+.logo-block {
+    width: 3vw;
+}
+.brand-box {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.topbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+.topbar-menu li {
+    list-style: none;
+}
+.topbar-menu li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 1.15vw;
+    cursor: pointer;
+    transition: 0.35s;
+}
+.topbar-menu li a:hover {
+    color: white;
+}
+.join-dis {
+    border: none;
+    background: #4c6ef5;
+    padding: 1.25vh 1vw;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.15vw;
+    transition: 0.35s;
+    cursor: pointer;
+}
+.join-dis:hover {
+    background: #4263eb;
+    transform: scale(1.1);
+}
+.extra-box {
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2vh 1.25vw;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.offer-text {
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+.fa-tags {
+    color: white;
+}
+.close-btn {
+    margin-top: 2.5vh;
+    border: none;
+    background: #37b24d;
+    padding: 1vh 1vw;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 500;
+    border-radius: 12px;
+    transition: 0.35s;
+    cursor: pointer;
+}
+.close-btn:hover {
+    background: #2b8a3e;
+    transform: scale(1.05);
+}
+.wel-txt {
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 32vh;
+    
+    /* here */
+    background: linear-gradient(45deg, #4c6ef5 20%,#7950f2 40%, #4c6ef5 60%, #7048e8 80%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: animgra 3.25s linear infinite;
+}
+@keyframes animgra {
+    to {
+      background-position: 200% center;
+    }
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    55%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+.secondary-txt {
+    color: white;
+    font-size: 1.75vw;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1.25vh;
+}
+.down-arr {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-caret-down {
+    color: white;
+    animation-name: floating;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.explore-box {
+    width: 75%;
+    margin: auto;
+    margin-top: 30vh;
+}
+.explore-text {
+    color: white;
+    font-weight: 500;
+    font-size: 2.25vw;
+    text-align: center;
+}
+.animated-banner {
+    background: white;
+    height: 5px;
+    width: 30vw;
+    margin: auto;
+    animation: animban 2s ease infinite;
+    border-radius: 10px;
+    margin-top: 0.5vh;
+}
+@keyframes animban {
+    0% {
+        background-color: #4c6ef5;
+    }
+    50% {
+        background-color: #7950f2;
+    }
+    100% {
+        background-color: #4263eb;
+    }
+}
+.explore-row {
+    margin-top: 10vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+.explore-child {
+    background: linear-gradient(45deg,#4c6ef5, #7950f2);
+    padding: 3vh;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vh;
+    color: white;
+    flex: 1;
+    transition: 0.35s;
+}
+.explore-child:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+}
+.explore-child h1 {
+    color: white;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+.explore-child p {
+    text-align: center;
+    font-size: 1.15vw;
+}
+.fa-truck {
+    color: white;
+}
+.fa-bug {
+    color: white;
+}
+.fa-code {
+    color: white;
+}
+.about-text {
+    color: white;
+    font-weight: 500;
+    font-size: 2.25vw;
+    text-align: center;
+}
+.about-box {
+    width: 75%;
+    margin: auto;
+    margin-top: 30vh;
+}
+.about-sec-text {
+    color: white;
+    text-align: center;
+    font-size: 1.25vw;
+    font-weight: 500;
+    margin-top: 5vh;
+}
+.introduction-box {
+    width: 60%;
+    margin: auto;
+    margin-top: 30vh
+}
+.introduction-text {
+    color: white;
+    font-weight: 500;
+    font-size: 2.25vw;
+    text-align: center;
+}
+.intro-box {
+    margin-top: 8vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 8vw;
+}
+.intro-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+    background: linear-gradient(45deg,#4c6ef5, #7950f2);
+    padding: 2.5vh;
+    border-radius: 12px;
+    flex: 1;
+    transition: 0.35s;
+}
+.intro-dev img {
+    width: 22.5vh;
+    border-radius: 50%;
+}
+.intro-dev h1 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-align: center;
+}
+.intro-dev p {
+    color: white;
+    font-size: 1.19vw;
+    text-align: center;
+}
+.intro-dev h2 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.35vw;
+    margin-top: -2.25vh;
+}
+.intro-dev:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+    background: none;
+    animation: animban 3.5s ease infinite;
+}
+.whatwedo-box {
+    width: 75%;
+    margin: auto;
+    margin-top: 30vh;
+}
+.whatwedo-text {
+    color: white;
+    font-weight: 500;
+    font-size: 2.25vw;
+    text-align: center;
+}
+.whatwedo-row {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2.5vw;
+    margin-top: 10vh;
+}
+.whatwedo-comp {
+    padding: 2.5vh;
+    background: linear-gradient(45deg,#4c6ef5, #7950f2);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    transition: 0.35s;
+    flex: 1;
+}
+.fa-rectangle-list {
+    color: white;
+}
+.whatwedo-comp h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.75vw;
+    font-weight: 600;
+}
+.whatwedo-comp p {
+    color: white;
+    text-align: center;
+    font-size: 1.15vw;
+    font-weight: 400;
+}
+.fa-server {
+    color: white;
+}
+.fa-sitemap {
+    color: white;
+}
+.whatwedo-comp:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+}
+.menu-bar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.bar {
+    width: 32px;
+    height: 4.25px;
+    border-radius: 5px;
+    background: white;
+}
+.main-menu {
+    position: absolute;
+    padding: 2.5vw;
+    border-radius: 6px;
+    background: linear-gradient(45deg,#4c6ef5, #7950f2);
+    top: 5.5vh;
+    right: 1vw;
+    width: 28vw;
+    transform: translateX(400px);
+    transition: 0.35s;
+}
+.main-menu.open {
+   transform: translateX(0px);
+}
+.secondary-menu {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    gap: 3.5vh;
+}
+.secondary-menu li {
+    list-style: none;
+    width: 100%;
+}
+.secondary-menu li a {
+    color: #4c6ef5;
+    text-decoration: none;
+    font-size: 3.5vw;
+    background: white;
+    padding: 1.25vh 1.5vw;
+    border-radius: 8px;
+    display: inline-block;
+    width: 80%;
+}
+.secondary-menu li a:active {
+    background: rgb(214, 212, 212);
+}
+@media only screen and (max-width: 768px) {
+    .menu-bar {
+        display: flex;
+    }
+    .topbar-menu {
+        display: none;
+    }
+    .topbar-brand {
+        font-size: 6.5vw;
+    }
+    .logo-block {
+        width: 6.5vw;
+    }
+    .brand-box {
+        gap: 2.5vw;
+    }
+    .join-dis {
+        font-size: 3.5vw;
+        border: 1.5px solid white;
+    }
+    .join-dis:active {
+        background: #5c7cfa;
+    }
+    .wel-txt {
+        font-size: 6.5vw;
+    }
+    .secondary-txt {
+        font-size: 4vw;
+    }
+    .extra-box {
+        padding: 5vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        background: black;
+    }
+    .offer-text {
+        font-size: 3.5vw;
+    }
+    .close-btn {
+        font-size: 3vw;
+        padding: 2vh 5vw;
+        border-radius: 12px;
+    }
+    .explore-text {
+        font-size: 5vw;
+    }
+    .animated-banner {
+        width: 95%;
+    }
+    .explore-row {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .explore-child h1 {
+        font-size: 5vw;
+    }
+    .explore-child p {
+        font-size: 3.5vw;
+    }
+    .about-text {
+        font-size: 5vw;
+    }
+    .about-sec-text {
+        font-size: 3.5vw;
+    }
+    .introduction-text {
+        font-size: 5vw;
+    }
+    .intro-box {
+        flex-direction: column;
+        gap: 6vh;
+    }
+    .intro-dev h1 {
+        font-size: 6.5vw;
+    }
+    .intro-dev h2 {
+        font-size: 3.5vw;
+    }
+    .intro-dev p {
+        font-size: 3vw;
+    }
+    .whatwedo-text {
+        font-size: 5vw;
+    }
+    .whatwedo-row {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .whatwedo-comp h1 {
+        font-size: 5vw;
+    }
+    .whatwedo-comp p {
+        font-size: 3.5vw;
+    }
+}
